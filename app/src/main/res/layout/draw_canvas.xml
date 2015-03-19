@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/napkin"
+    tools:context="com.example.app.FullscreenActivity">
+
+    <!-- This is the view on which we will draw. -->
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="gaffa.com.napkin.DrawView"
+        android:id="@+id/single_touch_view"
+        android:layout_gravity="left|top"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:background="#000000"
+            android:onClick="changeColorToBlack"
+            />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:background="#CC0000"
+            android:onClick="changeColorToRed"
+            />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:background="#0000CC"
+            android:onClick="changeColorToBlue"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:id="@+id/button4"
+            android:onClick="postToTwitter"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
